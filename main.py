@@ -1,8 +1,8 @@
 import telebot
 from telebot import types
 
-API_TOKEN = '5926697072:AAGx_FVYK4LC5fm1c9_k7_SLQ9uZb7F_dMY'
-chat_id = -1003171608196
+API_TOKEN = 'TOKEN'
+chat_id = #Chat Id
 bot = telebot.TeleBot(API_TOKEN)
 
 # Внутрипроцессное хранилище состояний пользователей (сложно для продакшена, но просто для Telegram бота)
