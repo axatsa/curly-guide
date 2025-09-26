@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 
 API_TOKEN = "TOKEN"
-GROUP_CHAT_ID = -1003151894179
+GROUP_CHAT_ID = -1003128296080
 
 bot = telebot.TeleBot(API_TOKEN)
 

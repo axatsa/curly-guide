@@ -2,13 +2,13 @@ import telebot
 from telebot import types
 
 API_TOKEN = "TOKEN"
-GROUP_CHAT_ID = -1003173960299
+GROUP_CHAT_ID = -1003167500913
 
 bot = telebot.TeleBot(API_TOKEN)
 
 user_state = {}
 
-# Этапы
+
 STAGE_LANG = "LANG"
 STAGE_CONTACT = "CONTACT"
 STAGE_CATEGORY = "CATEGORY"
