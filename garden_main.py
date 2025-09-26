@@ -5,7 +5,6 @@ API_TOKEN = 'TOKEN'
 chat_id = #Chat Id
 bot = telebot.TeleBot(API_TOKEN)
 
-# Внутрипроцессное хранилище состояний пользователей (сложно для продакшена, но просто для Telegram бота)
 user_state = {}
 
 
@@ -22,7 +21,7 @@ def get_feedback_keyboard():
 def send_welcome(message):
     bot.send_message(
         message.chat.id,
-        "Приветствую вас в боте ....\nЗдесь вы можете оставить как положительный, так и отрицательный отзыв!\n "
+        "Приветствую вас в боте Детсада ....\nЗдесь вы можете оставить как положительный, так и отрицательный отзыв!\n "
         "Будем рады вашим пожеланиям, предложениям или жалобам.",
         reply_markup=get_feedback_keyboard()
     )
