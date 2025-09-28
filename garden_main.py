@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-API_TOKEN = "8299978038:AAH3AQazByslC2a9Ob4_VanXYqhy9IQAAI4"
+API_TOKEN = "5926697072:AAEEzRzJHFxijPCrCBNgZsYHkrPhxE-mdeg"
 GROUP_CHAT_ID = -1003167500913
 
 bot = telebot.TeleBot(API_TOKEN)
@@ -15,9 +15,8 @@ STAGE_CONTACT_OPTION = "CONTACT_OPTION"
 STAGE_WAIT_CONTACT = "WAIT_CONTACT"
 
 # Кнопки
-RU_LANG_BTN = "🇷🇺 Русский"
-UZ_LANG_BTN = "🇺🇿 O'zbekcha"
-
+RU_LANG_BTN = "Русский"
+UZ_LANG_BTN = "O'zbekcha"
 RU_CATS = ["Жалоба", "Предложение"]
 UZ_CATS = ["Shikoyat", "Taklif"]
 RU_BACK = "Назад"
@@ -93,8 +92,7 @@ def get_contact_option_keyboard(lang):
     else:
         btn1 = UZ_SEND_WITHOUT_CONTACT
         btn2 = UZ_SEND_WITH_CONTACT
-    kb.add(types.KeyboardButton(btn1))
-    kb.add(types.KeyboardButton(btn2))
+    kb.row(types.KeyboardButton(btn1), types.KeyboardButton(btn2))
     return kb
 
 
