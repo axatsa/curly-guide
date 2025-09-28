@@ -1,8 +1,8 @@
 import telebot
 from telebot import types
 
-API_TOKEN = "5926697072:AAEEzRzJHFxijPCrCBNgZsYHkrPhxE-mdeg"
-GROUP_CHAT_ID = -1003167500913
+API_TOKEN = ""
+GROUP_CHAT_ID = 
 
 bot = telebot.TeleBot(API_TOKEN)
 user_state = {}
